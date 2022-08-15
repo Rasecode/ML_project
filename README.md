@@ -132,5 +132,6 @@ Notes:
 Resources_url_etc folder will be organize in the next days, so wait until is finally finished, but there are many links, articles and videos that I use for my deployment.
 
 Finally here are the GCP deployed images links:
-https://heart-disease-predictor-imagen-ioqjxmu3cq-uc.a.run.app
-https://streamlitapp-ioqjxmu3cq-uc.a.run.app
+https://heart-disease-predictor-ioqjxmu3cq-uc.a.run.app
+https://streamlitapprimac-ioqjxmu3cq-uc.a.run.app
+
