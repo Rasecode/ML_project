@@ -35,7 +35,7 @@ MLops_project
     │   Dockerfile
     │   requirements.txt
 ```
-Basically we will use BentoML, which is an open-source framework for serving ML models at production scale, Docker for the Containerization, Streamlit for the UI and last but not least GCP, specifically Cloud Run in order to push our images in a serverless way.
+Basically, we will use BentoML, which is an open-source framework for serving ML models at production scale, Docker for the Containerization, Streamlit for the UI and last but not least GCP, specifically Cloud Run in order to push our images in a serverless way.
 
 Step 1:
 We have to install all the libraries, run the first requirements.txt (MLops_project/requirements.txt) using:
@@ -121,11 +121,11 @@ Follow the same bentoml model deployment in GCP steps in order to deploy your UI
 -------------------------------------------------------------------------------------------------------------
 Summary:
 
-To sum up we combine different frameworks for creating our API. But the main ones are BentoML, Docker, Streamlit, and Google Cloud.
+To sum up, we combine different frameworks for creating our API. But the main ones are BentoML, Docker, Streamlit, and Google Cloud.
 
 API Functionality:
 -Once the containers are created, the streamlit container use the API container in order to produce the requests.
--In order to not touch the API itself I decided to create two containers instead of one, so for next updates in the UI, the redeployment will be easy.
+-In order to not touch the API itself, I decided to create two containers instead of one, so for next updates in the UI, the redeployment will be easy.
 Also, retraining the model will be simple if we follow the steps, due to is a simple model and it does not take too much time for preprocessing, considering that this is just a test, too.
 -The time of response is fast, it does not take more than 5 seconds for the first request, and the next ones are faster, basically instantaneous.
 -The use of the API is Simple, we have a very intuitive UI and it obviously does not take unvalid values for our model, so they are limited so some options in the case of categorical variables and limited max and min in the case of the continuous (for more detail check streamlit/app.py)
@@ -136,5 +136,6 @@ Resources_url_etc folder will be organize in the next days, so wait for the last
 Finally here are the GCP deployed images links:
 
 https://heart-disease-predictor-ioqjxmu3cq-uc.a.run.app
+
 https://streamlitapprimac-ioqjxmu3cq-uc.a.run.app
 
