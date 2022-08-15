@@ -17,8 +17,10 @@ MLops_project
 │   │   ...
 │
 └───src
-│   │   file011.txt
-│   │   file012.txt
+│   │   __init__.py
+│   │   bentoml_app.PY
+│   │   predict.PY
+│   │   process_data.PY
 │   │
 │   └───data
 │   │   │   heart_train_tf.csv
