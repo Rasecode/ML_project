@@ -1,0 +1,99 @@
+-Bento ML
+https://www.youtube.com/watch?v=HHkmfI_yncc
+https://www.youtube.com/watch?v=xcODUk0o6tU
+https://www.youtube.com/watch?v=t9VsqhYZ7a4
+
+-Bento vs fastapi
+https://modelserving.com/blog/breaking-up-with-flask-amp-fastapi-why-ml-model-serving-requires-a-specialized-framework
+https://www.libhunt.com/compare-BentoML-vs-fastapi
+https://www.reddit.com/r/Python/comments/vmdbjc/what_python_api_package_do_you_use_and_why/
+
+-Using GCP
+https://github.com/bentoml/google-cloud-run-deploy
+https://cbiit.github.io/bento-docs/master/installation/bento_gcp_cloud_run_installation.html
+https://docs.bentoml.org/en/0.13-lts/deployment/google_cloud_run.html
+
+-GitHub
+https://github.com/bentoml/BentoML
+https://github.com/khuyentran1401/customer_segmentation
+
+-BentoML
+https://docs.bentoml.org/en/latest/concepts/model.html
+https://docs.bentoml.org/en/latest/tutorial.html
+https://docs.bentoml.org/en/latest/concepts/model.html
+https://docs.bentoml.org/en/latest/concepts/deploy.html
+
+
+-Decorators
+https://www.geeksforgeeks.org/decorators-in-python/
+
+-Github Repo:
+https://github.com/Rasecado/MLops_project.git
+
+-CUSTOMIZED RUNNER
+https://docs.bentoml.org/en/latest/concepts/runner.html
+
+-Commands:
+bentoml serve bentoml_app.py:service --reload
+bentoml build
+--to build bento
+
+-Heroku
+npm install -g heroku
+
+-BEST tutorial
+https://www.ocelotconsulting.com/2022/02/20/bentoml-create-an-ml-powered-predictioin-service-in-minutes.html
+
+LETS TRY IF IT WORKS
+https://bitybyte.github.io/Organzando-codigo-Python/
+
+Linux paths notes:
+https://www.redhat.com/sysadmin/navigating-linux-filesystem#:~:text=For%20example%2C%20the%20absolute%20path,%2Fusr%2Fbin%2Fls%20.
+
+Why __ini__?
+https://bitybyte.github.io/Organzando-codigo-Python/
+https://stackoverflow.com/questions/338768/python-error-importerror-no-module-named
+
+Windows paths notes:
+https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats
+
+-Heroku running:
+https://www.quora.com/The-Heroku-memory-quota-exceeded-on-the-free-tier-with-a-worker-process-for-the-Python-app-What-do-I-do
+
+https://stackoverflow.com/questions/64390188/error-r14-memory-quota-exceeded-heroku-python-flask
+
+https://devcenter.heroku.com/articles/optimizing-dyno-usage
+
+Heroku and ML:
+https://stackoverflow.com/questions/49804356/heroku-memory-quota-vastly-exceeded-in-django-project-using-sklearn
+
+https://stackoverflow.com/questions/64280230/heroku-reduce-memory-consumption-for-tensorflow-app
+
+https://stackoverflow.com/questions/55397325/how-to-identify-the-root-cause-of-excess-memory-consumption-in-a-heroku-python-d
+
+-Up to this point, the dockerfile worked
+--We install GCP SDK
+--We install terraform, just adding new environment variables
+--https://www.youtube.com/watch?v=ljYzclmsvF4
+---video of how install terraform
+
+-How delete config in sdk
+--https://cloud.google.com/sdk/docs/configurations?hl=es_419
+
+GCP deployment:
+Edit tag
+-https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker
+
+Best tutorial for GCP cloud run:
+https://www.youtube.com/watch?v=TVm_Qaw41HU
+
+other tutorials:
+https://www.youtube.com/watch?v=CUpqQwt55pk&t=462s
+https://www.youtube.com/watch?v=HKuUmzSpljU
+https://www.youtube.com/watch?v=vieoHqt7pxo
+
+streamlit:
+-selectbox
+https://docs.streamlit.io/library/api-reference/widgets/st.selectbox
+Tutorial to create a docker image for streamlit:
+https://www.section.io/engineering-education/how-to-deploy-streamlit-app-with-docker/

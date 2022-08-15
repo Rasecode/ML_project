@@ -1,0 +1,25 @@
+DOCKER:
+bentoml build
+--to call the yaml.
+
+bentoml containerize heart_disease_predictor:ygluxga3hknq6vhb
+--to create the container
+--Once is created
+
+docker run -it --rm -p 3000:3000 heart_disease_predictor:6ynqbuy4m6nl6vhb
+run the container
+
+GCP:
+local:
+docker tag streamlitapp:latest rasecado/streamlitapp:latest
+docker push rasecado/streamlitapp:latest
+
+gcp:
+docker pull rasecado/streamlitapp:latest
+docker tag rasecado/streamlitapp:latest gcr.io/rimac-test-359419/streamlitapp:v1
+docker image ls
+docker push gcr.io/rimac-test-359419/streamlitapp:v1
+
+docker run -it --rm -p 8888:8888 -p 3000:3000 bentoml/quickstart:latest
+
+bentoml serve src/bentoml_app_pandas.py:service --reload
