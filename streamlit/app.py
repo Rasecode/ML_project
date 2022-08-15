@@ -82,7 +82,7 @@ if st.button("Get the probability"):
     data_json = json.dumps(data)
 
     prediction = requests.post(
-        "https://heart-disease-predictor-imagen-ioqjxmu3cq-uc.a.run.app/predict",
+        "https://heart-disease-predictor-ioqjxmu3cq-uc.a.run.app/predict",
         headers={"content-type": "application/json"},
         data=data_json,
     ).text
