@@ -1,6 +1,6 @@
 # MLops_project
-### In this project we will develop an API that will provide us the probabilty of suffering a heart disease based on a stadistical model.
-### To start, https://www.kaggle.com/kaanboke/beginner-friendly-catboost-with-optuna, will be the resource for our machine learning model, specifically we will use the LightGBM section with his Encoder.
+### In this project we will develop an API that will provide us the probability of suffering a heart disease based on a machine learning model.
+### To start, https://www.kaggle.com/kaanboke/beginner-friendly-catboost-with-optuna, will be the resource for our machine learning model, specifically we will use the LightGBM section with its Encoder.
 ### The Repo has the next structure:
 ```
 MLops_project
@@ -78,7 +78,7 @@ docker tag heart_disease_predictor:""tag"" rasecado/heart_disease_predictor:""ta
 docker push rasecado/heart_disease_predictor:""tag""
 ```
 Step 8:
-We need to go to GCP, search for Cloud Run and habilitate Registry Api and Cloud Run Api, in order to make our deployment.
+We need to go to GCP, search for Cloud Run and habilitate Registry Api and Cloud Run Api, in order to start our deployment.
 Once is done, we have to pull first our DockerHub repo and then push to Registry.
 ```
 docker pull rasecado/heart_disease_predictor:""tag""
@@ -91,7 +91,7 @@ Step 8:
 So, the last step is just customize our Cloud Run service, and select our image to run in GCP.
 
 BUILDING OUR UI:
-In this part, we will deploy our UI for our machine learning model. Check streamlit folder for more detail.
+In this part, we will deploy the UI for our machine learning model. Check streamlit folder for more detail.
 
 Step 1:
 Create a .py with all tne necessities for your UI. You can take streamlit/app.py as a template.
@@ -122,16 +122,17 @@ Summary:
 To sum up we combine different frameworks for creating our API. But the main ones are BentoML, Docker, Streamlit, and Google Cloud.
 
 API Functionality:
--Once the containers were created, the streamlit container use the API container in order to produce the requests.
--In order to not modify the API itself I decided to create two containers instead of one, so for next updates in UI, the redeployment will be easy.
-Also, retrain the model will be simple in order we follow the steps, because is a simple one and it does not take too much preprocessing, considering that this is just a test too.
--The time of response is fast, it does not take more than 10 seconds for the first request, and the next ones are faster, basically instantaneous.
+-Once the containers are created, the streamlit container use the API container in order to produce the requests.
+-In order to not touch the API itself I decided to create two containers instead of one, so for next updates in the UI, the redeployment will be easy.
+Also, retraining the model will be simple if we follow the steps, due to is a simple model and it does not take too much time for preprocessing, considering that this is just a test, too.
+-The time of response is fast, it does not take more than 5 seconds for the first request, and the next ones are faster, basically instantaneous.
 -The use of the API is Simple, we have a very intuitive UI and it obviously does not take unvalid values for our model, so they are limited so some options in the case of categorical variables and limited max and min in the case of the continuous (for more detail check streamlit/app.py)
 
 Notes:
-Resources_url_etc folder will be organize in the next days, so wait until is finally finished, but there are many links, articles and videos that I use for my deployment.
+Resources_url_etc folder will be organize in the next days, so wait for the last update, anyway, there are many links, articles and videos that I use for my deployment.
 
 Finally here are the GCP deployed images links:
+
 https://heart-disease-predictor-ioqjxmu3cq-uc.a.run.app
 https://streamlitapprimac-ioqjxmu3cq-uc.a.run.app
 
