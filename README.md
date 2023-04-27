@@ -1,9 +1,9 @@
-# MLops_project
+# ML_project
 ### In this project we will develop an API that will provide us the probability of suffering a heart disease based on a machine learning model.
 ### To start, https://www.kaggle.com/kaanboke/beginner-friendly-catboost-with-optuna, will be the resource for our machine learning model, specifically we will use the LightGBM section with its Encoder.
 ### The Repo has the next structure:
 ```
-MLops_project
+ML_project
 │
 │  __init__.py
 │  bentofile.yaml
@@ -38,9 +38,9 @@ MLops_project
 Basically, we will use BentoML, which is an open-source framework for serving ML models at production scale, Docker for the Containerization, Streamlit for the UI and last but not least GCP, specifically Cloud Run in order to push our images in a serverless way.
 
 Step 1:
-We have to install all the libraries, run the first requirements.txt (MLops_project/requirements.txt) using:
+We have to install all the libraries, run the first requirements.txt (ML_project/requirements.txt) using:
 ```
-pip install -r MLops_project/requirements.txt
+pip install -r ML_project/requirements.txt
 ```
 Step 2:
 We have to create our model, so execute process_data.py and then predict.py
