@@ -1,5 +1,4 @@
 # ML_project
-
 ### In this project we will develop an API that will provide us the probability of suffering a heart disease based on a machine learning model.
 ### To start, https://www.kaggle.com/kaanboke/beginner-friendly-catboost-with-optuna, will be the resource for our machine learning model, specifically we will use the LightGBM section with its Encoder.
 ### The Repo has the next structure:
